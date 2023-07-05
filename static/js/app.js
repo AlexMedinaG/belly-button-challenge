@@ -1,8 +1,8 @@
 //checking the file is loaded correctly
-console.log("https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json");
+console.log("app.js loaded");
 
-//using the D3 library to read the sample file
-d3.json("../../samples.json").then(function(data) {
+//using the D3 library to read the sample file /changed to the url for uploading
+d3.json("https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json").then(function(data) {
   //accessing the required data
   const samples = data.samples;
   const metadata = data.metadata;
