@@ -2,7 +2,7 @@
 console.log("app.js loaded");
 
 //using the D3 library to read the sample file  
-d3.json("./samples.json").then(function(data) {
+d3.json("./static/js/samples.json").then(function(data) {
   //accessing the required data
   const samples = data.samples;
   const metadata = data.metadata;
